@@ -1,9 +1,94 @@
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities; */
+/* src/index.css */
 
-/* @import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities'; */
+/* Importing the fonts */
+:root {
+    --primary-color: #e0f7fa; /* Light Cyan */
+    --accent-color-1: #003366; /* Dark Navy Blue */
+    --text-color: #333333; /* Charcoal Gray */
+  }
+  
+  @import "tailwindcss";
 
-@import "tailwindcss";
+  /* Custom CSS */
+    body {
+        font-family: "Poppins", sans-serif;
+        background-color: var(--primary-color);
+        color: var(--text-color);
+    }
+    /*  Navbar Styling  */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Navbar Styling  */
+  @keyframes slideIn {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  .slide-in {
+    animation: slideIn 1s ease-in-out;
+  }
+  
+    /* Navbar Styling  */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  
+  .bg-light-gray {
+    background-color: var(--background-color);
+  }
+  
+  
+  .footer {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+/* telegram active green dot */
+  .relative {
+    position: relative;
+  }
+  
+  .absolute {
+    position: absolute;
+  }
+  
+  .block {
+    display: block;
+  }
+  
+  .h-3 {
+    height: 0.75rem; /* 3 * 0.25rem */
+  }
+  
+  .w-3 {
+    width: 0.75rem; /* 3 * 0.25rem */
+  }
+  
+  .rounded-full {
+    border-radius: 9999px;
+  }
+  
+  .bg-green-500 {
+    background-color: #48bb78; /* Tailwind CSS green-500 */
+  }
