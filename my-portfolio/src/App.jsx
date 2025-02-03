@@ -1,9 +1,14 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-import './App.css'
+// Main App component
 import Header from './components/Header'
 import HeroSection from './components/Hero'
+import Skills from './components/Skills'
+import Achievements from './components/Achievements'
+import Projects from './components/Projects'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
+import './index.css'
+
+
 
 function App() {
 
@@ -11,6 +16,11 @@ function App() {
     <>
       <Header/>
       <HeroSection />
+      <Skills />
+      <Achievements />
+      <Projects />
+      <Contact />
+      <Footer/>
       
     </>
   )
