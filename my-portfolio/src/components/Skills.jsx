@@ -9,7 +9,7 @@ const skills = [
 
 function Skills() {
   return (
-    <section id="skills" className="bg-light-cyan p-8">
+    <section id="skills" className="bg-gray-200 p-8 mb-8">
       <h2 className="text-3xl font-bold text-dark-navy-blue text-center mb-8 fade-in">Skills</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {skills.map((skill, index) => (
