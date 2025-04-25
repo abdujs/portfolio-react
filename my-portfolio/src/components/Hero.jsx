@@ -1,28 +1,41 @@
-// src/components/HeroSection.jsx
 function HeroSection() {
-    return (
-      <section className="bg-gradient-to-r from-blue-400 to-purple-500 h-screen flex justify-center items-center text-white p-8">
-        <div className="flex flex-col md:flex-row items-center">
-          <img src="/img/abdulwahid-logo.jpg" alt="photo" className="w-48 h-48 rounded-full mb-4 md:mb-0 md:mr-8" />
-          <div className="text-center md:text-left">
-            <h1 className="text-4xl font-bold mb-4">Abdulwahid Munewer</h1>
-            <p className="text-xl mb-4">Web Developer</p>
-            <p className="mb-4">
-              I am a passionate web developer with a knack for designing and creating beautiful, functional websites. Let's work together to bring your vision to life!</p>
-            <div className="flex justify-center md:justify-start space-x-4">
-              <a href="/path-to-your-cv.pdf" className="bg-white text-blue-600 py-2 px-4 rounded">View CV</a>
-              <a href="/path-to-your-cv.pdf" download className="bg-white text-blue-600 py-2 rounded flex items-center">
-                <span>D</span>
-                <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 4v16h16V4M4 12h16"/>
-                </svg>
-              </a>
-            </div>
+  return (
+    <section className="bg-gray-200 h-screen flex justify-center items-center text-black p-8 mb-8">
+      <div className="flex flex-col md:flex-row items-center fade-in">
+        <img
+          src="/img/abdulwahid-logo.jpg"
+          alt="Abdulwahid Munewer"
+          className="w-48 h-48 rounded-full mb-4 md:mb-0 md:mr-8 slide-in-left"
+        />
+        <div className="text-center md:text-left md:ml-8">
+          <h1 className="text-5xl font-extrabold mb-4 slide-in-right text-gray-800">
+            Abdulwahid Munewer
+          </h1>
+          <p className="text-2xl font-medium mb-4 slide-in-right text-gray-600">
+            Full-stack (MERN) Web Developer
+          </p>
+          <p className="text-lg leading-relaxed mb-6 slide-in-right text-gray-700">
+            I am a web developer with a strong background in creating responsive and user-friendly websites. Skilled in modern frameworks and technologies, with expertise in API integration. Passionate about exploring new tools and enhancing development processes. Known for attention to detail and commitment to delivering high-quality web solutions. Let's work together to bring your vision to life!
+          </p>
+          <div className="flex justify-center md:justify-start space-x-4 slide-in-right">
+            <a
+              href="/Abdulwahid-Munewer-CV.pdf"
+              target="_blank"
+              className="bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition duration-300"
+            >
+              Download CV
+            </a>
+            <a
+              href="#contact"
+              className="bg-green-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-green-700 transition duration-300"
+            >
+              Hire Me
+            </a>
           </div>
         </div>
-      </section>
-    );
-  }
-  
-  export default HeroSection;
-  
+      </div>
+    </section>
+  );
+}
+
+export default HeroSection;
