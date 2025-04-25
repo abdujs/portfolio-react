@@ -17,8 +17,8 @@ function App() {
       <Header/>
       <HeroSection />
       <Skills />
-      <Achievements />
       <Projects />
+      <Achievements />
       <Contact />
       <Footer/>
       
