@@ -20,7 +20,7 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: "/my-portfolio",
+  // base: "/my-portfolio",
 });
 
 // from the docs
