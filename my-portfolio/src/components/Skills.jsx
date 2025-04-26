@@ -1,21 +1,25 @@
-//  Skills section of the portfolio
+import { FaJs, FaReact, FaNodeJs, FaCss3Alt, FaGitAlt, FaDatabase, FaHtml5, FaCode } from 'react-icons/fa';
+
 const skills = [
-  { name: "JavaScript", description: "Proficient in modern JavaScript frameworks and libraries." },
-  { name: "React", description: "Experienced in building responsive and dynamic web applications with React." },
-  { name: "Node.js", description: "Skilled in server-side development using Node.js and Express." },
-  { name: "CSS & Tailwind CSS", description: "Expert in crafting beautiful, responsive designs with CSS and Tailwind CSS." },
-  { name: "Git & GitHub", description: "Proficient in version control and collaborative development using Git and GitHub." },
+  { name: "JavaScript", icon: <FaJs className="text-yellow-500 w-8 h-8" /> },
+  { name: "React", icon: <FaReact className="text-blue-500 w-8 h-8" /> },
+  { name: "Node.js/ express", icon: <FaNodeJs className="text-green-500 w-8 h-8" /> },
+  { name: "CSS/ tailwind", icon: <FaCss3Alt className="text-blue-400 w-8 h-8" /> },
+  { name: "Git & GitHub", icon: <FaGitAlt className="text-orange-500 w-8 h-8" /> },
+  { name: "MongoDB", icon: <FaDatabase className="text-green-600 w-8 h-8" /> },
+  { name: "HTML", icon: <FaHtml5 className="text-orange-600 w-8 h-8" /> },
+  { name: "TypeScript", icon: <FaCode className="text-blue-600 w-8 h-8" /> },
 ];
 
 function Skills() {
   return (
     <section id="skills" className="bg-gray-200 p-8 mb-8">
-      <h2 className="text-3xl font-bold text-dark-navy-blue text-center mb-8 fade-in">Skills</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <h2 className="text-3xl font-bold text-center mb-8">Skills</h2>
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
         {skills.map((skill, index) => (
-          <div key={index} className="p-4 bg-white shadow-md rounded-lg text-charcoal-gray slide-in">
-            <h3 className="text-2xl font-bold mb-2">{skill.name}</h3>
-            <p>{skill.description}</p>
+          <div key={index} className="flex flex-col items-center space-y-2">
+            {skill.icon}
+            <h3 className="text-xl font-bold">{skill.name}</h3>
           </div>
         ))}
       </div>

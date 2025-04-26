@@ -2,19 +2,55 @@
 
 /* Importing the fonts */
 :root {
-    --primary-color: #e0f7fa; /* Light Cyan */
-    --accent-color-1: #003366; /* Dark Navy Blue */
-    --text-color: #333333; /* Charcoal Gray */
-  }
+  --primary-color: #1E293B; /* Dark Blue Gray */
+  --secondary-color: #3B82F6; /* Bright Blue */
+  --accent-color-2: #10B981; /* Emerald Green */
+  --background-color: #F1F5F9; /* Light Gray */
+  --card-background: #FFFFFF; /* White */
+  --text-color: #334155; /* Slate Gray */
+}
   
   @import "tailwindcss";
 
   /* Custom CSS */
-    body {
-        font-family: "Poppins", sans-serif;
-        background-color: var(--primary-color);
-        color: var(--text-color);
-    }
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Inter', sans-serif;
+  }
+  /* Header */
+header {
+  background-color: var(--primary-color);
+  color: var(--card-background);
+}
+/* button {
+  background-color: var(--secondary-color);
+  color: var(--card-background);
+  border-radius: 8px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: var(--accent-color-1);
+}
+
+/* Cards */
+/* .card {
+  background-color: var(--card-background);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 16px;
+} */ */
+
+/* Links */
+a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent-color-2);
+}
     /*  Navbar Styling  */
   @keyframes fadeIn {
     from {
